@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:dsrdinheiro/pages/orcamento_page.dart";
 
 class HomePage extends StatefulWidget {
   @override
@@ -30,7 +31,10 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => OrcamentoPage()));
+            },
           ),
           GestureDetector(
             child: Card(
